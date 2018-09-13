@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Spv interface document: Member List</title>
+<title>SPV C++ Document: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Spv interface document
+   <div id="projectname">SPV C++ Document
    </div>
   </td>
  </tr>
@@ -76,6 +76,8 @@ $(function() {
   <tr bgcolor="#f0f0f0"><td class="entry"><b>_p2pEnable</b> (defined in <a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a>)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_rootPath</b> (defined in <a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a>)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a3d9279a67161e51bdbd5d72d70d19a1a">CreateMasterWallet</a>(const std::string &amp;masterWalletId, const std::string &amp;mnemonic, const std::string &amp;phrasePassword, const std::string &amp;payPassword, const std::string &amp;language=&quot;english&quot;)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a1d1ec8b105b85061a831131a84cfb44d">CreateMultiSignMasterWallet</a>(const std::string &amp;masterWalletId, const std::string &amp;payPassword, const nlohmann::json &amp;coSigners, uint32_t requiredSignCount)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a06abe8cbfbf82ff518a6a558bb1db822">CreateMultiSignMasterWallet</a>(const std::string &amp;masterWalletId, const std::string &amp;privKey, const std::string &amp;payPassword, const nlohmann::json &amp;coSigners, uint32_t requiredSignCount)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a80a81764b0da7a1698e4b53111af4881">DestroyWallet</a>(const std::string &amp;masterWalletId)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a24f3c7eeb72e4ab7a004df5fec6173bf">ExportWalletWithKeystore</a>(IMasterWallet *masterWallet, const std::string &amp;backupPassword, const std::string &amp;payPassword)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#aba6f903083128bd0a98f82388e5955e5">ExportWalletWithMnemonic</a>(IMasterWallet *masterWallet, const std::string &amp;payPassword)</td><td class="entry"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html">Elastos::ElaWallet::MasterWalletManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>

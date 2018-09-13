@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Spv interface document: Elastos::ElaWallet::IMasterWallet Class Reference</title>
+<title>SPV C++ Document: Elastos::ElaWallet::IMasterWallet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Spv interface document
+   <div id="projectname">SPV C++ Document
    </div>
   </td>
  </tr>
@@ -79,6 +79,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac3fafd4e4ff836f9a1f7bdc5b135617a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92c03a2c082dfb92812cd01df2a5897"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#ac92c03a2c082dfb92812cd01df2a5897">GetId</a> () const =0</td></tr>
 <tr class="separator:ac92c03a2c082dfb92812cd01df2a5897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30801601cd64d295a0305ec7b42a4cb5"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#a30801601cd64d295a0305ec7b42a4cb5">GetBasicInfo</a> () const =0</td></tr>
+<tr class="separator:a30801601cd64d295a0305ec7b42a4cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01de7f29083daf1036927b205187479"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html">ISubWallet</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#aa01de7f29083daf1036927b205187479">GetAllSubWallets</a> () const =0</td></tr>
 <tr class="separator:aa01de7f29083daf1036927b205187479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a285582d4a3f6a4efe3333d91cdcbb9ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html">ISubWallet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#a285582d4a3f6a4efe3333d91cdcbb9ca">CreateSubWallet</a> (const std::string &amp;chainID, const std::string &amp;payPassword, bool singleAddress, uint64_t feePerKb=0)=0</td></tr>
@@ -335,6 +337,33 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Get wallet existing sub wallets. </p><dl class="section return"><dt>Returns</dt><dd>existing sub wallets by array. </dd></dl>
+
+</div>
+</div>
+<a id="a30801601cd64d295a0305ec7b42a4cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30801601cd64d295a0305ec7b42a4cb5">&#9670;&nbsp;</a></span>GetBasicInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nlohmann::json Elastos::ElaWallet::IMasterWallet::GetBasicInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Here is a example of standard wallet basic info: { "Account": { "Type": "Standard" } }</p>
+<p>and an example of multi-sign(m = 2, n = 3) wallet basic info: { "Account": { "Type": "Multi-Sign" "Details": { "Signers": [ "028763e9d2530d26708891037a183362ade43be4499a70d0dd22bc646236cc815f", "0333f5633c66e7ef648e44ed622b7be788f834f11760689a9c56c96e20e3c3300d", "022f2ac3763b5844cf0067c63e9806f2482496bb03119742543e719a71800bd929"], "RequiredSignCount": 2 } } } </p><dl class="section return"><dt>Returns</dt><dd>basic information of current master wallet. </dd></dl>
 
 </div>
 </div>

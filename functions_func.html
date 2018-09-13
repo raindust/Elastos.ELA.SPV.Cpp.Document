@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Spv interface document: Class Members - Functions</title>
+<title>SPV C++ Document: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Spv interface document
+   <div id="projectname">SPV C++ Document
    </div>
   </td>
  </tr>
@@ -67,6 +67,9 @@ $(function() {
 <li>AddCallback()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a275f83e5673ee04d3f1f507ffde68444">Elastos::ElaWallet::ISubWallet</a>
 </li>
+<li>AppendSignToMultiSignTransaction()
+: <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#aa83d3807e72073cbbe6d2e5c89e85f1d">Elastos::ElaWallet::ISubWallet</a>
+</li>
 </ul>
 
 
@@ -79,7 +82,7 @@ $(function() {
 </li>
 <li>CheckSign()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#ac1f26e200d85c2c00a3e27bfb218378b">Elastos::ElaWallet::IMasterWallet</a>
-, <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#afaee4c396b7c42e4df4c23164244928c">Elastos::ElaWallet::ISubWallet</a>
+, <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a277002f445ea455cc7c935b392a4bf13">Elastos::ElaWallet::ISubWallet</a>
 </li>
 <li>CreateAddress()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a7fe66c84c31e64c86cfcdbf8b12da3a2">Elastos::ElaWallet::ISubWallet</a>
@@ -94,8 +97,9 @@ $(function() {
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet_manager.html#a569c72bccd18266520a382fa6b00bf4d">Elastos::ElaWallet::IMasterWalletManager</a>
 , <a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a3d9279a67161e51bdbd5d72d70d19a1a">Elastos::ElaWallet::MasterWalletManager</a>
 </li>
-<li>CreateMultiSignAddress()
-: <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a0ed79dac966d034f1a789004eedd57dd">Elastos::ElaWallet::ISubWallet</a>
+<li>CreateMultiSignMasterWallet()
+: <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet_manager.html#a6231d26fc1a866155574b80f632a887c">Elastos::ElaWallet::IMasterWalletManager</a>
+, <a class="el" href="class_elastos_1_1_ela_wallet_1_1_master_wallet_manager.html#a1d1ec8b105b85061a831131a84cfb44d">Elastos::ElaWallet::MasterWalletManager</a>
 </li>
 <li>CreateMultiSignTransaction()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a401e38f68b7c0783f310dcc15e9b5a06">Elastos::ElaWallet::ISubWallet</a>
@@ -169,6 +173,10 @@ $(function() {
 <li>GetBalanceWithAddress()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a531fff69171319b4b337cf8c6f1034c2">Elastos::ElaWallet::ISubWallet</a>
 </li>
+<li>GetBasicInfo()
+: <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#a30801601cd64d295a0305ec7b42a4cb5">Elastos::ElaWallet::IMasterWallet</a>
+, <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a66cd9e8cf56708a38f76e01f0562e2ad">Elastos::ElaWallet::ISubWallet</a>
+</li>
 <li>GetChainId()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#aa9965f21b64c6ad882b26267ca67be96">Elastos::ElaWallet::ISubWallet</a>
 </li>
@@ -181,6 +189,7 @@ $(function() {
 <li>GetPublicKey()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_id_agent.html#a6fd6e3e95ce7c76bd9a0a88ed1fbd827">Elastos::ElaWallet::IIdAgent</a>
 , <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#a8d4e7a150f79fa2347ff052b94ddf464">Elastos::ElaWallet::IMasterWallet</a>
+, <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a880b4d51cf01d680179f35f465b05236">Elastos::ElaWallet::ISubWallet</a>
 </li>
 <li>GetSupportedChains()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_master_wallet.html#a003d6d47660192ab63b519cb82f96e2c">Elastos::ElaWallet::IMasterWallet</a>
@@ -223,8 +232,18 @@ $(function() {
 <li>OnBlockSyncStopped()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet_callback.html#aef91f4fc3981cbb2552e2f62bba2dd57">Elastos::ElaWallet::ISubWalletCallback</a>
 </li>
+<li>OnDestroyWallet()
+: <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet_callback.html#a4ef3117cc96adfbf8d317a5ad0483c32">Elastos::ElaWallet::ISubWalletCallback</a>
+</li>
 <li>OnTransactionStatusChanged()
 : <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet_callback.html#a50f4ba63172e6c8a3966668a96b186ef">Elastos::ElaWallet::ISubWalletCallback</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>PublishMultiSignTransaction()
+: <a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a1487a727b64551afa95dad532c73877c">Elastos::ElaWallet::ISubWallet</a>
 </li>
 </ul>
 

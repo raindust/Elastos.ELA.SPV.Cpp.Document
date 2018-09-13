@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Spv interface document: Elastos::ElaWallet::ISubWallet Class Reference</title>
+<title>SPV C++ Document: Elastos::ElaWallet::ISubWallet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Spv interface document
+   <div id="projectname">SPV C++ Document
    </div>
   </td>
  </tr>
@@ -90,6 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a50d33c5fab1cd07b18edc888fb667cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9965f21b64c6ad882b26267ca67be96"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#aa9965f21b64c6ad882b26267ca67be96">GetChainId</a> () const =0</td></tr>
 <tr class="separator:aa9965f21b64c6ad882b26267ca67be96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cd9e8cf56708a38f76e01f0562e2ad"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a66cd9e8cf56708a38f76e01f0562e2ad">GetBasicInfo</a> () const =0</td></tr>
+<tr class="separator:a66cd9e8cf56708a38f76e01f0562e2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e894f3d59a3765de8c01fb4932c71e"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#ad9e894f3d59a3765de8c01fb4932c71e">GetBalanceInfo</a> ()=0</td></tr>
 <tr class="separator:ad9e894f3d59a3765de8c01fb4932c71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbbbd7361497546d4ada13442193420"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a7dbbbd7361497546d4ada13442193420">GetBalance</a> ()=0</td></tr>
@@ -106,10 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b36d325049f9493abba76efd4749f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018a4800f4f0035c2496bdc0ab13154e"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a018a4800f4f0035c2496bdc0ab13154e">CreateTransaction</a> (const std::string &amp;fromAddress, const std::string &amp;toAddress, uint64_t amount, const std::string &amp;memo, const std::string &amp;remark)=0</td></tr>
 <tr class="separator:a018a4800f4f0035c2496bdc0ab13154e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ed79dac966d034f1a789004eedd57dd"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a0ed79dac966d034f1a789004eedd57dd">CreateMultiSignAddress</a> (const nlohmann::json &amp;multiPublicKeyJson, uint32_t totalSignNum, uint32_t requiredSignNum)=0</td></tr>
-<tr class="separator:a0ed79dac966d034f1a789004eedd57dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401e38f68b7c0783f310dcc15e9b5a06"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a401e38f68b7c0783f310dcc15e9b5a06">CreateMultiSignTransaction</a> (const std::string &amp;fromAddress, const std::string &amp;toAddress, uint64_t amount, const std::string &amp;memo)=0</td></tr>
 <tr class="separator:a401e38f68b7c0783f310dcc15e9b5a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83d3807e72073cbbe6d2e5c89e85f1d"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#aa83d3807e72073cbbe6d2e5c89e85f1d">AppendSignToMultiSignTransaction</a> (const nlohmann::json &amp;rawTransaction, const std::string &amp;payPassword)=0</td></tr>
+<tr class="separator:aa83d3807e72073cbbe6d2e5c89e85f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1487a727b64551afa95dad532c73877c"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a1487a727b64551afa95dad532c73877c">PublishMultiSignTransaction</a> (const nlohmann::json &amp;rawTransaction, uint64_t fee)=0</td></tr>
+<tr class="separator:a1487a727b64551afa95dad532c73877c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3f7b8cb951c58a1d86b5b7bc2efb99"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#aff3f7b8cb951c58a1d86b5b7bc2efb99">CalculateTransactionFee</a> (const nlohmann::json &amp;rawTransaction, uint64_t feePerKb)=0</td></tr>
 <tr class="separator:aff3f7b8cb951c58a1d86b5b7bc2efb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f25d09464bb6061cfe8a7507994b9c"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a99f25d09464bb6061cfe8a7507994b9c">SendRawTransaction</a> (const nlohmann::json &amp;transactionJson, uint64_t fee, const std::string &amp;payPassword)=0</td></tr>
@@ -118,8 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7a3552a147aa858b0fc5c44cb26773c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a951644b524bf12751cf9a0d585f17692"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a951644b524bf12751cf9a0d585f17692">Sign</a> (const std::string &amp;message, const std::string &amp;payPassword)=0</td></tr>
 <tr class="separator:a951644b524bf12751cf9a0d585f17692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaee4c396b7c42e4df4c23164244928c"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#afaee4c396b7c42e4df4c23164244928c">CheckSign</a> (const std::string &amp;address, const std::string &amp;message, const std::string &amp;signature)=0</td></tr>
-<tr class="separator:afaee4c396b7c42e4df4c23164244928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277002f445ea455cc7c935b392a4bf13"><td class="memItemLeft" align="right" valign="top">virtual nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a277002f445ea455cc7c935b392a4bf13">CheckSign</a> (const std::string &amp;publicKey, const std::string &amp;message, const std::string &amp;signature)=0</td></tr>
+<tr class="separator:a277002f445ea455cc7c935b392a4bf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880b4d51cf01d680179f35f465b05236"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elastos_1_1_ela_wallet_1_1_i_sub_wallet.html#a880b4d51cf01d680179f35f465b05236">GetPublicKey</a> () const =0</td></tr>
+<tr class="separator:a880b4d51cf01d680179f35f465b05236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a50d33c5fab1cd07b18edc888fb667cbd"></a>
@@ -181,6 +187,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa83d3807e72073cbbe6d2e5c89e85f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83d3807e72073cbbe6d2e5c89e85f1d">&#9670;&nbsp;</a></span>AppendSignToMultiSignTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nlohmann::json Elastos::ElaWallet::ISubWallet::AppendSignToMultiSignTransaction </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>rawTransaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>payPassword</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append sign to a multi-sign transaction and return the content of transaction in json format. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rawTransaction</td><td>content of transaction in json format. </td></tr>
+    <tr><td class="paramname">payPassword</td><td>use to decrypt the root private key temporarily. Pay password should between 8 and 128, otherwise will throw invalid argument exception. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If success return the content of transaction in json format. </dd></dl>
+
+</div>
+</div>
 <a id="aff3f7b8cb951c58a1d86b5b7bc2efb99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff3f7b8cb951c58a1d86b5b7bc2efb99">&#9670;&nbsp;</a></span>CalculateTransactionFee()</h2>
 
@@ -225,8 +275,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afaee4c396b7c42e4df4c23164244928c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaee4c396b7c42e4df4c23164244928c">&#9670;&nbsp;</a></span>CheckSign()</h2>
+<a id="a277002f445ea455cc7c935b392a4bf13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277002f445ea455cc7c935b392a4bf13">&#9670;&nbsp;</a></span>CheckSign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +288,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual nlohmann::json Elastos::ElaWallet::ISubWallet::CheckSign </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
+          <td class="paramname"><em>publicKey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -299,57 +349,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Create a new address or return existing unused address. Note that if create the sub wallet by setting the singleAddress to true, will always return the single address. </p><dl class="section return"><dt>Returns</dt><dd>a new address or existing unused address. </dd></dl>
-
-</div>
-</div>
-<a id="a0ed79dac966d034f1a789004eedd57dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ed79dac966d034f1a789004eedd57dd">&#9670;&nbsp;</a></span>CreateMultiSignAddress()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string Elastos::ElaWallet::ISubWallet::CreateMultiSignAddress </td>
-          <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
-          <td class="paramname"><em>multiPublicKeyJson</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>totalSignNum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>requiredSignNum</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a multi-sign address used to create multi-sign transaction. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">multiPublicKeyJson</td><td>is a list of public keys in json format. </td></tr>
-    <tr><td class="paramname">totalSignNum</td><td>specify total sign number (n). </td></tr>
-    <tr><td class="paramname">requiredSignNum</td><td>specify required sign number (m). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>multi-sign address. </dd></dl>
 
 </div>
 </div>
@@ -656,6 +655,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a66cd9e8cf56708a38f76e01f0562e2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66cd9e8cf56708a38f76e01f0562e2ad">&#9670;&nbsp;</a></span>GetBasicInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nlohmann::json Elastos::ElaWallet::ISubWallet::GetBasicInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Here is a example of hd account wallet basic info: { "Type": "Normal" //Type can be Normal, Mainchain, Sidechain and Idchain "Account": { "Type": "HD Account" "Details": { "CoinIndex": 1 } } }</p>
+<p>and an example of multi-sign account wallet basic info: { "Type": "Mainchain" //Type can be Normal, Mainchain, Sidechain and Idchain "Account": { "Type": "Multi-Sign Account" } } </p><dl class="section return"><dt>Returns</dt><dd>basic information of current master wallet. </dd></dl>
+
+</div>
+</div>
 <a id="aa9965f21b64c6ad882b26267ca67be96"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9965f21b64c6ad882b26267ca67be96">&#9670;&nbsp;</a></span>GetChainId()</h2>
 
@@ -679,6 +705,76 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Get the sub wallet chain id. </p><dl class="section return"><dt>Returns</dt><dd>sub wallet chain id. </dd></dl>
+
+</div>
+</div>
+<a id="a880b4d51cf01d680179f35f465b05236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880b4d51cf01d680179f35f465b05236">&#9670;&nbsp;</a></span>GetPublicKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Elastos::ElaWallet::ISubWallet::GetPublicKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get root public key of current sub wallet. </p><dl class="section return"><dt>Returns</dt><dd>root public key with hex string format. </dd></dl>
+
+</div>
+</div>
+<a id="a1487a727b64551afa95dad532c73877c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1487a727b64551afa95dad532c73877c">&#9670;&nbsp;</a></span>PublishMultiSignTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nlohmann::json Elastos::ElaWallet::ISubWallet::PublishMultiSignTransaction </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>rawTransaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fee</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Send multi-sign transaction by p2p network. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rawTransaction</td><td>content of transaction in json format. </td></tr>
+    <tr><td class="paramname">fee</td><td>specify fee for miners, fee must greater or equal than 1000 (sela). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sent result in json format. </dd></dl>
 
 </div>
 </div>
